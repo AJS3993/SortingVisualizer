@@ -38,6 +38,7 @@ export class SortingVisualizer extends React.Component {
                     key={idx}
                     style={{height: `${value}px`}}></div>
             ))}
+            <button onClick={() => this.resetArray()}>Generate New Array</button>
             </div>
         </>
         );
