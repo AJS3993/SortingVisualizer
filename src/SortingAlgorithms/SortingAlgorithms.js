@@ -83,3 +83,14 @@ export function getMergeSortAnimations(array) {
       mainArray[k++] = auxiliaryArray[j++];
     }
   }
+
+//Insertion Sort
+//1. grab an element
+//2. find its correct position
+//3. place it in that spot
+//4. repeat
+
+export function InsertionSort(array){
+
+  return console.log(array);
+}

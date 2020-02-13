@@ -1,6 +1,6 @@
 import React from 'react';
 import './SortingVisualizer.css';
-import {getMergeSortAnimations} from '../SortingAlgorithms/SortingAlgorithms.js';
+import {getMergeSortAnimations, InsertionSort} from '../SortingAlgorithms/SortingAlgorithms.js';
 
 // Change this value for the speed of the animations.
 const ANIMATION_SPEED_MS = 1;
@@ -34,6 +34,10 @@ export class SortingVisualizer extends React.Component {
         }
 //resets the state to have this new array
         this.setState({array});
+    }
+
+    InsertSort(){
+        InsertionSort(this.state.array)
     }
 
     mergeSort() {
@@ -74,6 +78,7 @@ export class SortingVisualizer extends React.Component {
             ))}
             <button onClick={() => this.resetArray()}>Generate New Array</button>
             <button onClick={() => this.mergeSort()}>Merge Sort</button>
+            <button onClick={() => this.InsertSort()}>Insertion Sort</button>
             </div>
         </>
         );
