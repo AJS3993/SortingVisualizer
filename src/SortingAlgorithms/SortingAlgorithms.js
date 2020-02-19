@@ -84,13 +84,12 @@ export function getMergeSortAnimations(array) {
     }
   }
 
-//Insertion Sort
-//1. grab an element
-//2. find its correct position
-//3. place it in that spot
-//4. repeat
+//Bubble Sort
+//1. check if elements are in the wrong order
+//2. if they are swap them
+//3. move on to next two elements
 
-export function InsertionSort(array){
+export function BubbleSort(array){
 
   return console.log(array);
 }
